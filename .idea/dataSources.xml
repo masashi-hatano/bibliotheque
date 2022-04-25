@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="bibliotheque" uuid="577f98b3-e49b-4405-86b1-6375d70494b1">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\hatan\ST5\git\Bibliotheque\src\bibliotheque.db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="bibliotheque [2]" uuid="dfa3ebe6-f862-42fa-9214-caedd7c910f5">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\hatan\Bibliotheque ver.11.08\src\bibliotheque.db</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.31.1/sqlite-jdbc-3.31.1.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,73 @@
+@startuml
+
+class oeuvre{
+    oeuvreID
+    titre
+    auteurID1
+    auteurID2
+    la date de premiere publication
+}
+
+class auteur{
+    nom_prenom
+    anniversaire
+    auteurID
+}
+
+class edition{
+    editeur
+    annee
+    ISBN
+    oeuvreID
+}
+
+class livre{
+    livreiD
+    titre
+    ISBN
+    utilisateurID
+}
+
+class utilisateur{
+    nom
+    prenom
+    email
+    tel
+    utilisateurID
+    username
+    password
+    liste_rouge
+}
+
+class history{
+    date
+    titre
+    ISBN
+    utilisateurID
+}
+
+class gestionnaire{
+    nom
+    prenom
+    email
+    tel
+    username
+    password
+}
+
+class categorie{
+    nombre_de_livre
+    duree
+}
+
+oeuvre "(1,n)" - "(1,1)" edition
+oeuvre "(1,n)" -- "(1,n)" auteur
+edition "(1,n)" - "(1,1)" livre
+livre "(0,1)" -- "(0,n)" utilisateur
+utilisateur "(0,n)" - "(0,n)" history
+gestionnaire -> categorie
+categorie -> utilisateur
+gestionnaire -> utilisateur
+
+
+@enduml
